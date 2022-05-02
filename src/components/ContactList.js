@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { removeContact } from '../actions/contactAction'
 
 function ContactList(props) {
+    console.log("Hi there")
+    console.log("Hi there - ", process.env.REACT_APP_TEST)
     const [searchItem, setSearchItem] = useState('')
     const contacts = useSelector((state) => {
         return state.contacts
